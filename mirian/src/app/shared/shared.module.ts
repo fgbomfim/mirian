@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from '@app/shared/components/menu/menu.component';
 import { DirectivesModule } from '@app/shared/directives/directives.module';
 import { PipesModule } from '@app/shared/pipes/pipes.module';
+import { MaterialModule } from '@app/core/material/material.module';
 
 @NgModule({
   imports: [
     CommonModule,
     DirectivesModule,
-    PipesModule
+    PipesModule,
+    MaterialModule
   ],
   declarations: [
     MenuComponent
@@ -16,7 +18,8 @@ import { PipesModule } from '@app/shared/pipes/pipes.module';
   exports: [
     MenuComponent,
     DirectivesModule,
-    PipesModule
+    PipesModule,
+    MaterialModule
   ]
 })
 export class SharedModule { }
